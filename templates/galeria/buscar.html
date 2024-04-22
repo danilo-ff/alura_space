@@ -1,4 +1,4 @@
-{% extends 'galeria/base.html' %}
+{% extends 'shared/base.html' %}
 {% load static %}
 {% block content %}           
     <section class="banner">
@@ -41,6 +41,9 @@
                 </li>
                 {% endfor %}
                 {% else %}
+                <div class="imagem__textos">
+                    <p>Fotografias não encontradas</p>
+                </div>
                 {% endif %}
             </ul>
         </div>
