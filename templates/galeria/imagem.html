@@ -18,6 +18,10 @@
                     <p class="imagem__descricao">{{ card.legenda }}</p>
                     <p class="imagem__texto">{{ card.descricao}}</p>
                 </div>
+                <div>
+                    <a href="{% url 'galeria:editar_imagem' card.id %}"><button class="btn btn-success col-12" style="padding: top 5px;">Editar</button></a>
+                    <a href="{% url 'galeria:deletar_imagem' card.id %}"><button class="btn btn-success col-12" style="padding: top 5px; background-color: brown;">Deletar</button></a>
+                </div>
             </div>
             
         </div>
